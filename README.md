@@ -22,30 +22,30 @@ Example: `Optional<Card> card = marvelSnap4j.getCard("Captain America")`
 
 ### Get location
 
-`Optional<Location> location = marvelSnap4j.getLocation(String name)`
+```Optional<Location> location = marvelSnap4j.getLocation(String name)```
 
-Example: `Optional<Location> location - marvelSnap4j.getLocation("Ego")`
+Example: ```Optional<Location> location - marvelSnap4j.getLocation("Ego")```
 
 ### Get cards by keyword
 
-`Optional<List<Card>> cards = marvelSnap4j.getCardsByKeyword(Keyword keyword)`
+```Optional<List<Card>> cards = marvelSnap4j.getCardsByKeyword(Keyword keyword)```
 
-Example: `Optional<List<Card>> cards = marvelSnap4j.getCardsByKeyword(Keyword.ONGOING)`
+Example: ```Optional<List<Card>> cards = marvelSnap4j.getCardsByKeyword(Keyword.ONGOING)```
 
 ### Get cards by collection level
 
-`Optional<List<Card>> cards = marvelSnap4j.getCardsByCollectionLevel(CollectionLevel collectionLevel)`
+```Optional<List<Card>> cards = marvelSnap4j.getCardsByCollectionLevel(CollectionLevel collectionLevel)```
 
-Example: `Optional<List<Card>> cards = marvelSnap4j.getCardsByCollectionLevel(CollectionLevel.POOL_1)`
+Example: ```Optional<List<Card>> cards = marvelSnap4j.getCardsByCollectionLevel(CollectionLevel.POOL_1)```
 
 ### Get cards by cost
 
-`Optional<List<Card>> cards = marvelSnap4j.getCardsByCost(int cost)`
+```Optional<List<Card>> cards = marvelSnap4j.getCardsByCost(int cost)```
 
-Example: `Optional<List<Card>> cards = marvelSnap4j.getCardsByCost(3)`
+Example: ```Optional<List<Card>> cards = marvelSnap4j.getCardsByCost(3)```
 
 ### Get cards by power
 
-`Optional<List<Card>> cards = marvelSnap4j.getCardsByPower(int power)`
+```Optional<List<Card>> cards = marvelSnap4j.getCardsByPower(int power)```
 
-Example: `Optional<List<Card>> cards = marvelSnap4j.getCardsByPower(4)`
+Example: ```Optional<List<Card>> cards = marvelSnap4j.getCardsByPower(4)```
