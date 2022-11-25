@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.eridanus</groupId>
-    <artifactId>MarvelSnap4j</artifactId>
+    <artifactId>marvel-snap-4j</artifactId>
     <version>1.0.0</version>
 
     <properties>
