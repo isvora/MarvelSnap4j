@@ -3,6 +3,7 @@ package org.isvora.snap.service;
 import org.isvora.snap.model.Card;
 import org.isvora.snap.model.CardResponse;
 import org.isvora.snap.type.CollectionLevel;
+import org.isvora.snap.type.Keyword;
 import org.isvora.snap.utils.MarvelSnapUtils;
 
 import java.io.IOException;
@@ -23,8 +24,8 @@ public class CardService {
         return cardResponse.getCards().get(0);
     }
 
-    public List<Card> getCardsByKeyword(String keyword, String api) throws IOException, InterruptedException {
-        String params = URLEncoder.encode(keyword, StandardCharsets.UTF_8);
+    public List<Card> getCardsByKeyword(Keyword keyword, String api) throws IOException, InterruptedException {
+        String params = URLEncoder.encode(keyword.getKeyword(), StandardCharsets.UTF_8);
         String stringBuilder = api +
                 MarvelSnapUtils.CHARACTER +
                 "keyword=" +

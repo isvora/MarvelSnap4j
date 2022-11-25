@@ -3,6 +3,7 @@ import org.isvora.snap.model.Card;
 import org.isvora.snap.model.Location;
 import org.isvora.snap.service.MarvelSnapService;
 import org.isvora.snap.type.CollectionLevel;
+import org.isvora.snap.type.Keyword;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -38,7 +39,7 @@ class MarvelSnapServiceTest {
     @Test
     @SneakyThrows
     public void testGetCardsByKeyword() {
-        String keyword = "Destroy";
+        Keyword keyword = Keyword.DESTROY;
 
         List<Card> cards = marvelSnapService.getCardsByKeyword(keyword);
 

@@ -4,6 +4,7 @@ import org.isvora.snap.model.Card;
 import org.isvora.snap.model.Location;
 import org.isvora.snap.service.MarvelSnapService;
 import org.isvora.snap.type.CollectionLevel;
+import org.isvora.snap.type.Keyword;
 
 import java.io.IOException;
 import java.util.List;
@@ -29,7 +30,7 @@ public class MarvelSnap4jImpl implements MarvelSnap4j {
         }
     }
 
-    public Optional<List<Card>> getCardsByKeyword(String keyword) {
+    public Optional<List<Card>> getCardsByKeyword(Keyword keyword) {
         try {
             return Optional.of(marvelSnapService.getCardsByKeyword(keyword));
         } catch (IOException | InterruptedException e) {
