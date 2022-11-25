@@ -1,3 +1,4 @@
+import lombok.SneakyThrows;
 import org.isvora.snap.model.Card;
 import org.isvora.snap.model.Location;
 import org.isvora.snap.service.MarvelSnapService;
@@ -5,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.util.List;
 
 class MarvelSnapServiceTest {
 
@@ -22,12 +24,23 @@ class MarvelSnapServiceTest {
     }
 
     @Test
-    public void testGetLocation() throws IOException, InterruptedException {
+    @SneakyThrows
+    public void testGetLocation() {
         String name = "Asgard";
 
         Location response = marvelSnapService.getLocation(name);
 
         Assertions.assertEquals(response.getName(), name);
         Assertions.assertEquals(response.getType(), "Location");
+    }
+
+    @Test
+    @SneakyThrows
+    public void testGetCardsByKeyword() {
+        String keyword = "Destroy";
+
+        List<Card> cards = marvelSnapService.getCardsByKeyword(keyword);
+
+        Assertions.assertFalse(cards.isEmpty());
     }
 }
