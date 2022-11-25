@@ -6,7 +6,7 @@
 
     <groupId>io.github.isvora</groupId>
     <artifactId>marvel-snap-4j</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <name>MarvelSnap4j</name>
     <description>Wrapper for marvelsnap.io api</description>
