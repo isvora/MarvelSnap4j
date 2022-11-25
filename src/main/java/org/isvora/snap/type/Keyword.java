@@ -10,8 +10,7 @@ public enum Keyword {
     DESTROY("Destroy"),
     MOVE("Move"),
     ONGOING("Ongoing"),
-    ON_REVEAL("On Reveal"),
-    SUMMON("Summon");
+    ON_REVEAL("On Reveal");
 
     private final String keyword;
 }
