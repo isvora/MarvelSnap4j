@@ -1,9 +1,10 @@
 package org.isvora.snap.type;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@Getter
 @AllArgsConstructor
 public enum CollectionLevel {
 
@@ -13,8 +14,13 @@ public enum CollectionLevel {
     BASIC("Collection Level 1-14"),
     POOL_1("Collection Level 18-214 (Pool 1)"),
     POOL_2("Collection Level 222-450 (Pool 2)"),
-    POOL_3("Collection Level 462-? (Pool 2)");
+    @JsonProperty("method")
+    POOL_3("Collection Level 462-? (Pool 3)");
 
     private final String collectionLevel;
 
+    @JsonValue
+    public String getCollectionLevel() {
+        return collectionLevel;
+    }
 }
