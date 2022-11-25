@@ -1,4 +1,4 @@
-package org.eridanus.snap.type;
+package com.eridanus.snap.type;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;

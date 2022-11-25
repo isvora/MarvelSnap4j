@@ -1,4 +1,4 @@
-package org.eridanus.snap.utils;
+package com.eridanus.snap.utils;
 
 public class MarvelSnapUtils {
 

@@ -1,4 +1,4 @@
-package org.eridanus.snap.model;
+package com.eridanus.snap.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -14,8 +14,9 @@ import java.util.List;
 @Getter
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class LocationResponse {
+public class CardResponse {
 
     @JsonProperty("card")
-    private List<Location> locations;
+    private List<Card> cards;
+
 }

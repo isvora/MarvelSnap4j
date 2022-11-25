@@ -1,10 +1,10 @@
 import lombok.SneakyThrows;
-import org.eridanus.snap.model.Card;
-import org.eridanus.snap.model.Location;
-import org.eridanus.snap.service.MarvelSnapService;
-import org.eridanus.snap.type.Ability;
-import org.eridanus.snap.type.CollectionLevel;
-import org.eridanus.snap.type.Keyword;
+import com.eridanus.snap.model.Card;
+import com.eridanus.snap.model.Location;
+import com.eridanus.snap.service.MarvelSnapService;
+import com.eridanus.snap.type.Ability;
+import com.eridanus.snap.type.CollectionLevel;
+import com.eridanus.snap.type.Keyword;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

@@ -1,4 +1,4 @@
-package org.eridanus.snap.type;
+package com.eridanus.snap.type;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

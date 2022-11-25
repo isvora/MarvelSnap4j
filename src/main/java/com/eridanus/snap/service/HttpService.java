@@ -1,4 +1,4 @@
-package org.eridanus.snap.service;
+package com.eridanus.snap.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
