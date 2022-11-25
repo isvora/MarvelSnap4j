@@ -2,22 +2,16 @@ import lombok.SneakyThrows;
 import org.isvora.snap.model.Card;
 import org.isvora.snap.model.Location;
 import org.isvora.snap.service.MarvelSnapService;
+import org.isvora.snap.type.Ability;
 import org.isvora.snap.type.CollectionLevel;
 import org.isvora.snap.type.Keyword;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.EnumSource;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
-
-import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 class MarvelSnapServiceTest {
 
@@ -59,6 +53,15 @@ class MarvelSnapServiceTest {
     @EnumSource(CollectionLevel.class)
     public void testGetCardsByCollectionLevel(CollectionLevel collectionLevel) {
         List<Card> cards = marvelSnapService.getCardsByCollectionLevel(collectionLevel);
+
+        Assertions.assertFalse(cards.isEmpty());
+    }
+
+    @SneakyThrows
+    @ParameterizedTest
+    @EnumSource(Ability.class)
+    public void testGetCardsByAbility(Ability ability) {
+        List<Card> cards = marvelSnapService.getCardsByAbility(ability);
 
         Assertions.assertFalse(cards.isEmpty());
     }

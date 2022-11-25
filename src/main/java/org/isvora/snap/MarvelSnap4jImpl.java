@@ -3,6 +3,7 @@ package org.isvora.snap;
 import org.isvora.snap.model.Card;
 import org.isvora.snap.model.Location;
 import org.isvora.snap.service.MarvelSnapService;
+import org.isvora.snap.type.Ability;
 import org.isvora.snap.type.CollectionLevel;
 import org.isvora.snap.type.Keyword;
 
@@ -41,6 +42,14 @@ public class MarvelSnap4jImpl implements MarvelSnap4j {
     public Optional<List<Card>> getCardsByCollectionLevel(CollectionLevel collectionLevel) {
         try {
             return Optional.of(marvelSnapService.getCardsByCollectionLevel(collectionLevel));
+        } catch (IOException | InterruptedException e) {
+            return Optional.empty();
+        }
+    }
+
+    public Optional<List<Card>> getCardsByAbility(Ability ability) {
+        try {
+            return Optional.of(marvelSnapService.getCardsByAbility(ability));
         } catch (IOException | InterruptedException e) {
             return Optional.empty();
         }
