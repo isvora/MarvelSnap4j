@@ -39,4 +39,12 @@ public class MarvelSnapService {
     public List<Card> getCardsByAbility(Ability ability) throws IOException, InterruptedException {
         return cardService.getCardsByAbility(ability, API);
     }
+
+    public List<Card> getCardsByCost(int cost) throws IOException, InterruptedException {
+        return cardService.getCardsByCost(cost, API);
+    }
+
+    public List<Card> getCardByPower(int power) throws IOException, InterruptedException {
+        return cardService.getCardByPower(power, API);
+    }
 }

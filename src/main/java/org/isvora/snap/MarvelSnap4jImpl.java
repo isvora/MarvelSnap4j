@@ -54,4 +54,20 @@ public class MarvelSnap4jImpl implements MarvelSnap4j {
             return Optional.empty();
         }
     }
+
+    public Optional<List<Card>> getCardsByCost(int cost) {
+        try {
+            return Optional.of(marvelSnapService.getCardsByCost(cost));
+        } catch (IOException | InterruptedException e) {
+            return Optional.empty();
+        }
+    }
+
+    public Optional<List<Card>> getCardByPower(int power) {
+        try {
+            return Optional.of(marvelSnapService.getCardByPower(power));
+        } catch (IOException | InterruptedException e) {
+            return Optional.empty();
+        }
+    }
 }

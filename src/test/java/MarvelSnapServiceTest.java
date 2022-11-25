@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.io.IOException;
 import java.util.List;
@@ -62,6 +63,24 @@ class MarvelSnapServiceTest {
     @EnumSource(Ability.class)
     public void testGetCardsByAbility(Ability ability) {
         List<Card> cards = marvelSnapService.getCardsByAbility(ability);
+
+        Assertions.assertFalse(cards.isEmpty());
+    }
+
+    @SneakyThrows
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    public void testGetCardsByAbility(int cost) {
+        List<Card> cards = marvelSnapService.getCardsByCost(cost);
+
+        Assertions.assertFalse(cards.isEmpty());
+    }
+
+    @SneakyThrows
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    public void testGetCardsByPower(int power) {
+        List<Card> cards = marvelSnapService.getCardByPower(power);
 
         Assertions.assertFalse(cards.isEmpty());
     }

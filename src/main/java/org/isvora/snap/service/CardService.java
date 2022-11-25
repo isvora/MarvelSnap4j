@@ -62,4 +62,26 @@ public class CardService {
         return cardResponse.getCards();
     }
 
+    public List<Card> getCardsByCost(int cost, String api) throws IOException, InterruptedException {
+        String stringBuilder = api +
+                "cost=" +
+                cost +
+                MarvelSnapUtils.LIMIT_1000;
+
+        CardResponse cardResponse = httpService.makeRequest(URI.create(stringBuilder), CardResponse.class);
+
+        return cardResponse.getCards();
+    }
+
+    public List<Card> getCardByPower(int power, String api) throws IOException, InterruptedException {
+        String stringBuilder = api +
+                "power=" +
+                power +
+                MarvelSnapUtils.LIMIT_1000;
+
+        CardResponse cardResponse = httpService.makeRequest(URI.create(stringBuilder), CardResponse.class);
+
+        return cardResponse.getCards();
+    }
+
 }
