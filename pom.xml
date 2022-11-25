@@ -8,6 +8,9 @@
     <artifactId>marvel-snap-4j</artifactId>
     <version>1.0.0</version>
 
+    <name>MarvelSnap4j</name>
+    <description>Wrapper for marvelsnap.io api</description>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -59,14 +62,28 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>my-repo</id>
-            <url>https://maven.pkg.jetbrains.space/eridanus/p/projectkey/my-maven-repo</url>
-        </repository>
-    </distributionManagement>
+    <scm>
+        <connection>scm:git:git://github.com/isvora/MarvelSnap4j.git</connection>
+        <developerConnection>scm:git:ssh://github.com/isvora/MarvelSnap4j.git</developerConnection>
+        <url>https://github.com/isvora/MarvelSnap4j</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Isvoran Andrei</name>
+            <email>isvoranandrei96@gmail.com</email>
+            <organization>org.eridanus</organization>
+            <organizationUrl>https://github.com/isvora/MarvelSnap4j</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
 
 </project>
