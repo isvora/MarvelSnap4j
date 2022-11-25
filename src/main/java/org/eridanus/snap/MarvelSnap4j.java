@@ -17,7 +17,7 @@ public interface MarvelSnap4j {
      *
      * @return MarvelSnap4j Instance
      */
-    static MarvelSnap4j getInstance() {
+    static MarvelSnap4jImpl getInstance() {
         return newBuilder().build();
     }
 
