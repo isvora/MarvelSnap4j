@@ -1,4 +1,4 @@
-package com.eridanus.snap.model;
+package io.github.snap.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;

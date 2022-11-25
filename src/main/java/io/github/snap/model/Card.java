@@ -1,10 +1,10 @@
-package com.eridanus.snap.model;
+package io.github.snap.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import lombok.extern.jackson.Jacksonized;
-import com.eridanus.snap.type.CollectionLevel;
+import io.github.snap.type.CollectionLevel;
 
 @Jacksonized
 @Builder

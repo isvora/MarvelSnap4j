@@ -1,8 +1,8 @@
-package com.eridanus.snap.service;
+package io.github.snap.service;
 
-import com.eridanus.snap.utils.MarvelSnapUtils;
-import com.eridanus.snap.model.Location;
-import com.eridanus.snap.model.LocationResponse;
+import io.github.snap.utils.MarvelSnapUtils;
+import io.github.snap.model.Location;
+import io.github.snap.model.LocationResponse;
 
 import java.io.IOException;
 import java.net.URI;

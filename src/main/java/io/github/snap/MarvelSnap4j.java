@@ -1,4 +1,4 @@
-package com.eridanus.snap;
+package io.github.snap;
 
 
 public interface MarvelSnap4j {

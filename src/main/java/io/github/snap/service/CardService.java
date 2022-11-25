@@ -1,11 +1,11 @@
-package com.eridanus.snap.service;
+package io.github.snap.service;
 
-import com.eridanus.snap.model.Card;
-import com.eridanus.snap.type.Ability;
-import com.eridanus.snap.type.CollectionLevel;
-import com.eridanus.snap.utils.MarvelSnapUtils;
-import com.eridanus.snap.model.CardResponse;
-import com.eridanus.snap.type.Keyword;
+import io.github.snap.model.Card;
+import io.github.snap.type.Ability;
+import io.github.snap.type.CollectionLevel;
+import io.github.snap.utils.MarvelSnapUtils;
+import io.github.snap.model.CardResponse;
+import io.github.snap.type.Keyword;
 
 import java.io.IOException;
 import java.net.URI;
