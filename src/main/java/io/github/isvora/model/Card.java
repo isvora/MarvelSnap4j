@@ -1,8 +1,10 @@
-package io.github.snap.model;
+package io.github.isvora.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import lombok.extern.jackson.Jacksonized;
+import io.github.isvora.type.CollectionLevel;
 
 @Jacksonized
 @Builder
@@ -11,7 +13,7 @@ import lombok.extern.jackson.Jacksonized;
 @Getter
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Location {
+public class Card {
 
     private int id;
 
@@ -19,5 +21,13 @@ public class Location {
 
     private String type;
 
+    private int cost;
+
+    private int power;
+
     private String ability;
+
+    @JsonProperty("method")
+    private CollectionLevel collectionLevel;
+
 }

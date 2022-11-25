@@ -1,4 +1,4 @@
-package io.github.snap.type;
+package io.github.isvora.type;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

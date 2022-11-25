@@ -1,4 +1,4 @@
-package io.github.snap.model;
+package io.github.isvora.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,4 @@
-package io.github.snap.utils;
+package io.github.isvora.utils;
 
 public class MarvelSnapUtils {
 

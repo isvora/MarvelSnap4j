@@ -1,4 +1,4 @@
-package io.github.snap.service;
+package io.github.isvora.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

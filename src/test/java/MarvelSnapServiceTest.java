@@ -1,10 +1,10 @@
 import lombok.SneakyThrows;
-import io.github.snap.model.Card;
-import io.github.snap.model.Location;
-import io.github.snap.service.MarvelSnapService;
-import io.github.snap.type.Ability;
-import io.github.snap.type.CollectionLevel;
-import io.github.snap.type.Keyword;
+import io.github.isvora.model.Card;
+import io.github.isvora.model.Location;
+import io.github.isvora.service.MarvelSnapService;
+import io.github.isvora.type.Ability;
+import io.github.isvora.type.CollectionLevel;
+import io.github.isvora.type.Keyword;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

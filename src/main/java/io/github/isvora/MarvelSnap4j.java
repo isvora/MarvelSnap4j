@@ -1,4 +1,4 @@
-package io.github.snap;
+package io.github.isvora;
 
 
 public interface MarvelSnap4j {

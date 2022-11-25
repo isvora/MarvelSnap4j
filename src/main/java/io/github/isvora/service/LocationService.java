@@ -1,8 +1,8 @@
-package io.github.snap.service;
+package io.github.isvora.service;
 
-import io.github.snap.utils.MarvelSnapUtils;
-import io.github.snap.model.Location;
-import io.github.snap.model.LocationResponse;
+import io.github.isvora.utils.MarvelSnapUtils;
+import io.github.isvora.model.Location;
+import io.github.isvora.model.LocationResponse;
 
 import java.io.IOException;
 import java.net.URI;
