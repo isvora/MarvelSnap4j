@@ -1,13 +1,8 @@
-package org.isvora.snap.service;
+package org.eridanus.snap.service;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.isvora.snap.model.CardResponse;
-import org.isvora.snap.model.LocationResponse;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;

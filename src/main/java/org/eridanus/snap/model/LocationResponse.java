@@ -1,4 +1,4 @@
-package org.isvora.snap.model;
+package org.eridanus.snap.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

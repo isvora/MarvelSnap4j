@@ -1,8 +1,8 @@
-package org.isvora.snap.service;
+package org.eridanus.snap.service;
 
-import org.isvora.snap.model.Location;
-import org.isvora.snap.model.LocationResponse;
-import org.isvora.snap.utils.MarvelSnapUtils;
+import org.eridanus.snap.utils.MarvelSnapUtils;
+import org.eridanus.snap.model.Location;
+import org.eridanus.snap.model.LocationResponse;
 
 import java.io.IOException;
 import java.net.URI;

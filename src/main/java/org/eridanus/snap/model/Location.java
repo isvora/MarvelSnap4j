@@ -1,13 +1,8 @@
-package org.isvora.snap.model;
+package org.eridanus.snap.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import lombok.extern.jackson.Jacksonized;
-
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
 @Jacksonized
 @Builder
@@ -16,9 +11,13 @@ import java.util.Map;
 @Getter
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CardResponse {
+public class Location {
 
-    @JsonProperty("card")
-    private List<Card> cards;
+    private int id;
 
+    private String name;
+
+    private String type;
+
+    private String ability;
 }

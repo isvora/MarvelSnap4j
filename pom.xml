@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.isvora</groupId>
+    <groupId>org.eridanus</groupId>
     <artifactId>MarvelSnap4j</artifactId>
     <version>1.0.0</version>
 
@@ -61,5 +61,12 @@
         </dependency>
 
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>my-repo</id>
+            <url>https://maven.pkg.jetbrains.space/eridanus/p/projectkey/my-maven-repo</url>
+        </repository>
+    </distributionManagement>
 
 </project>

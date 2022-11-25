@@ -1,4 +1,4 @@
-package org.isvora.snap.utils;
+package org.eridanus.snap.utils;
 
 public class MarvelSnapUtils {
 

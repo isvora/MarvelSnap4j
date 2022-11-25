@@ -1,4 +1,4 @@
-package org.isvora.snap;
+package org.eridanus.snap;
 
 
 public interface MarvelSnap4j {

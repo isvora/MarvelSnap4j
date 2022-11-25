@@ -1,11 +1,11 @@
-package org.isvora.snap;
+package org.eridanus.snap;
 
-import org.isvora.snap.model.Card;
-import org.isvora.snap.model.Location;
-import org.isvora.snap.service.MarvelSnapService;
-import org.isvora.snap.type.Ability;
-import org.isvora.snap.type.CollectionLevel;
-import org.isvora.snap.type.Keyword;
+import org.eridanus.snap.type.Ability;
+import org.eridanus.snap.model.Card;
+import org.eridanus.snap.model.Location;
+import org.eridanus.snap.service.MarvelSnapService;
+import org.eridanus.snap.type.CollectionLevel;
+import org.eridanus.snap.type.Keyword;
 
 import java.io.IOException;
 import java.util.List;
