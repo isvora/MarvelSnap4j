@@ -2,6 +2,7 @@ import lombok.SneakyThrows;
 import org.isvora.snap.model.Card;
 import org.isvora.snap.model.Location;
 import org.isvora.snap.service.MarvelSnapService;
+import org.isvora.snap.type.CollectionLevel;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -42,5 +43,16 @@ class MarvelSnapServiceTest {
         List<Card> cards = marvelSnapService.getCardsByKeyword(keyword);
 
         Assertions.assertFalse(cards.isEmpty());
+    }
+
+    @Test
+    @SneakyThrows
+    public void testGetCardsByCollectionLevel() {
+        CollectionLevel collectionLevel = CollectionLevel.POOL_1;
+
+        List<Card> cards = marvelSnapService.getCardsByCollectionLevel(collectionLevel);
+
+        Assertions.assertFalse(cards.isEmpty());
+        Assertions.assertEquals(cards.size(), 46);
     }
 }

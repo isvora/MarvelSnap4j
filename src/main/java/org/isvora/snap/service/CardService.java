@@ -2,6 +2,7 @@ package org.isvora.snap.service;
 
 import org.isvora.snap.model.Card;
 import org.isvora.snap.model.CardResponse;
+import org.isvora.snap.type.CollectionLevel;
 import org.isvora.snap.utils.MarvelSnapUtils;
 
 import java.io.IOException;
@@ -27,6 +28,18 @@ public class CardService {
         String stringBuilder = api +
                 MarvelSnapUtils.CHARACTER +
                 "keyword=" +
+                params +
+                MarvelSnapUtils.LIMIT_1000;
+
+        CardResponse cardResponse = httpService.makeRequest(URI.create(stringBuilder), CardResponse.class);
+
+        return cardResponse.getCards();
+    }
+
+    public List<Card> getCardsByCollectionLevel(CollectionLevel collectionLevel, String api) throws IOException, InterruptedException {
+        String params = URLEncoder.encode(collectionLevel.getCollectionLevel(), StandardCharsets.UTF_8);
+        String stringBuilder = api +
+                "obtain=" +
                 params +
                 MarvelSnapUtils.LIMIT_1000;
 

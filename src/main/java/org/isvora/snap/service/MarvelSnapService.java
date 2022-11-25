@@ -3,6 +3,7 @@ package org.isvora.snap.service;
 import lombok.RequiredArgsConstructor;
 import org.isvora.snap.model.Card;
 import org.isvora.snap.model.Location;
+import org.isvora.snap.type.CollectionLevel;
 
 import java.io.IOException;
 import java.util.List;
@@ -26,5 +27,9 @@ public class MarvelSnapService {
 
     public List<Card> getCardsByKeyword(String keyword) throws IOException, InterruptedException {
         return cardService.getCardsByKeyword(keyword, API + "type=Character&");
+    }
+
+    public List<Card> getCardsByCollectionLevel(CollectionLevel collectionLevel) throws IOException, InterruptedException {
+        return cardService.getCardsByCollectionLevel(collectionLevel, API);
     }
 }
