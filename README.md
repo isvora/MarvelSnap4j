@@ -8,8 +8,13 @@ Marvel Snap is a trading card game in the Marvel universe developed by Nuverse a
 
 First we need to get a MarvelSnap4j Instance
 
-```
-MarvelSnap4jImpl marvelSnap4j = MarvelSnap4j.getInstance();
+```java
+import io.github.isvora.MarvelSnap4j;
+public class Main {
+    public static void main(String... args){
+        MarvelSnap4jImpl marvelSnap4j = MarvelSnap4j.getInstance();
+    }
+}
 ```
 
 Then,  we can use the `marvelSnap4j` object to get information about the cards/location of the game.
