@@ -8,7 +8,7 @@ Marvel Snap is a trading card game in the Marvel universe developed by Nuverse a
 
 In order to use the library we can import it from maven central. Just add the dependency to your pom.xml
 
-```
+```xml
 <dependency>
   <groupId>io.github.isvora</groupId>
   <artifactId>marvel-snap-4j</artifactId>
