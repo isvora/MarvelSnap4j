@@ -16,81 +16,52 @@ In order to use the library we can import it from maven central. Just add the de
 </dependency>
 ```
 
-Then we need to get a MarvelSnap4j Instance
+Then we need to get a `MarvelSnap4j` Instance
 
 ```java
-import io.github.isvora.MarvelSnap4j;
+import io.github.isvora.MarvelSnap4jImpl;
+
 public class Main {
-    public static void main(String... args){
+
+    public static void main(String... args) {
         MarvelSnap4jImpl marvelSnap4j = MarvelSnap4j.getInstance();
     }
+
 }
 ```
 
 Then we can use the `marvelSnap4j` object to get information about the cards/location of the game.
 
-## Get card
+```java
+import io.github.isvora.MarvelSnap4j;
+import io.github.isvora.MarvelSnap4jImpl;
+import io.github.isvora.model.Card;
+import io.github.isvora.model.Location;
 
-```
-Optional<Card> card = marvelSnap4j.getCard(String name)
-```
+import java.util.List;
+import java.util.Optional;
 
-Example: 
-```
-Optional<Card> card = marvelSnap4j.getCard("Captain America")
-```
+public class Main {
+    public static void main(String... args) {
+        MarvelSnap4jImpl marvelSnap4j = MarvelSnap4j.getInstance();
 
-## Get location
+        // Returns a Card instance if found by the given name
+        Optional<Card> card = marvelSnap4j.getCard("Captain America");
 
-```
-Optional<Location> location = marvelSnap4j.getLocation(String name)
-```
+        // Returns a Location instance if found by the given name
+        Optional<Location> location = marvelSnap4j.getLocation("Ego");
 
-Example: 
-```
-Optional<Location> location - marvelSnap4j.getLocation("Ego")
-```
+        // Returns a list of cards for a given keyword.
+        Optional<List<Card>> cards = marvelSnap4j.getCardsByKeyword(Keyword.ONGOING);
 
-## Get cards by keyword
+        // Returns a list of cards for a given collection level.
+        Optional<List<Card>> cards = marvelSnap4j.getCardsByCollectionLevel(CollectionLevel.POOL_1);
 
-```
-Optional<List<Card>> cards = marvelSnap4j.getCardsByKeyword(Keyword keyword)
-```
+        // Returns a list of cards that have a given power
+        Optional<List<Card>> cards = marvelSnap4j.getCardsByPower(3);
 
-Example: 
-```
-Optional<List<Card>> cards = marvelSnap4j.getCardsByKeyword(Keyword.ONGOING)
-```
-
-## Get cards by collection level
-
-```
-Optional<List<Card>> cards = marvelSnap4j.getCardsByCollectionLevel(CollectionLevel level)
-```
-
-Example: 
-```
-Optional<List<Card>> cards = marvelSnap4j.getCardsByCollectionLevel(CollectionLevel.POOL_1)
-```
-
-## Get cards by cost
-
-```
-Optional<List<Card>> cards = marvelSnap4j.getCardsByCost(int cost)
-```
-
-Example: 
-```
-Optional<List<Card>> cards = marvelSnap4j.getCardsByCost(3)
-```
-
-## Get cards by power
-
-```
-Optional<List<Card>> cards = marvelSnap4j.getCardsByPower(int power)
-```
-
-Example: 
-```
-Optional<List<Card>> cards = marvelSnap4j.getCardsByPower(4)
+        // Returns a list of cards that have a given cost
+        Optional<List<Card>> cards = marvelSnap4j.getCardsByCost(2);
+    }
+}
 ```
